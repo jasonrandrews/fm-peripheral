@@ -1,4 +1,4 @@
-FROM jasonrandrews/pod1
+FROM jasonrandrews/fmpod
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
