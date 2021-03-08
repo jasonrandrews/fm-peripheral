@@ -29,9 +29,7 @@ CXX_VER := $(shell $(CXX) -dumpversion 2> /dev/null | \
                    sed -e "s/\([0-9]*\.[0-9]*\)\.[0-9]*/\1/")
 CXX_VER_MAJOR := $(word 1, $(subst ., ,$(CXX_VER)))
 
-ifeq ($(CXX_VER_MAJOR),7)
 LDFLAGS += -latomic
-endif
 
 # Determine commands
 SIMGEN_CMD = $(MAXCORE_HOME)/bin/simgen -p $(PROJECT_PATH)/systemc-peripheral-example.sgproj \

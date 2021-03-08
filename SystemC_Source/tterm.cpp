@@ -182,7 +182,7 @@ tterm::startConnection(bool start_telnet)
         cout << "Connected to port: " << PORT_NUM+incr << endl;
 
         if (start_telnet) {
-            char xt[128];
+            char xt[544];
 #ifdef _WIN32
             std::ostringstream cmd;
             cmd << getenv("SystemRoot") << "\\system32\\cmd.exe";
